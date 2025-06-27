@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>To Do List</title>
   </head>
   <body>
@@ -11,10 +11,13 @@
       <h1>To Do List 📝</h1>
     </header>
     <main>
-        
-        <input type="text">
-        <button>Add Task</button>
+      <div class="addTaskInput">
+        <input type="text" id="taskInput" placeholder="Write your task ✏️" />
+        <button id="addTaskBtn">Add Task</button>
+      </div>
+      <ul id="tasks"></ul>
     </main>
-    <script src="./script.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>

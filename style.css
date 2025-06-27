@@ -1,13 +1,71 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #a79277;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header h1 {
+    padding: 20px;
+}
+
+main {
+    background-color: #fff2e1;
+    width: 80%;
+    border-radius: 36px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.addTaskInput {
+    width: 100%;
+    display: flex;
+    gap: 10px;
     justify-content: center;
-    padding: 20px 0px;
-    
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    border: none;
+    border-radius: 30px;
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    background-color: #fff2e1;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#tasks {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
 }
