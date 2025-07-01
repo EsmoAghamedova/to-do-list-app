@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>To Do List</title>
-  </head>
-  <body>
-    <header>
-      <h1>To Do List 📝</h1>
-    </header>
-    <main>
-      <div class="addTaskInput">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>To Do List 📝</h1>
+  </header>
+  <main>
+    <section class="todo-app">
+      <div class="placeholder">
         <input type="text" id="taskInput" placeholder="Write your task ✏️" />
-        <button id="addTaskBtn">Add Task</button>
+        <button id="addTaskBtn">Add</button>
       </div>
-      <ul id="tasks"></ul>
-    </main>
+      <div class="list">
+        <ul id="taskList"></ul>
+      </div>
+      <nav id="filters" aria-label="Task filters">
+        <button data-filter="all" type="button">All</button>
+        <button data-filter="active" type="button">Active</button>
+        <button data-filter="completed" type="button">Completed</button>
+      </nav>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
